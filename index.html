@@ -9,14 +9,19 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/style.css">
-	  <title>Slap Brady</title>
+	  <title>Wrestemania</title>
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid text-white text-center">
+		<div class="row text-center mt-3 text-white">
+			<div class="col">
+				<h2 id="winner"></h2>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col">
-				<img class="stone-cold" id="stone-cold" src="https://shop.wwe.com/on/demandware.static/-/Sites/default/dwd8f17634/images/slot/landing/superstar-landing/Superstar-Category_Superstar_562x408_stoneCold.png"
+				<img class="stone-cold" src="https://shop.wwe.com/on/demandware.static/-/Sites/default/dwd8f17634/images/slot/landing/superstar-landing/Superstar-Category_Superstar_562x408_stoneCold.png"
 				 alt="">
 			</div>
 		</div>
@@ -38,11 +43,28 @@
 	</div>
 
 	<footer class="container-fluid">
-		<div class="row">
+		<div class="row text-center mt-3">
 			<div class="col">
 				<button class="btn btn-danger" onclick="slap()">slap</button>
 				<button class="btn btn-warning" onclick="punch()">punch</button>
 				<button class="btn btn-success" onclick="kick()">kick</button>
+			</div>
+		</div>
+		<div class="row text-center mt-3">
+			<div class="col">
+				<button class="btn btn-danger" onclick="giveBrass()">Brass Knuckles</button>
+				<button class="btn btn-warning" onclick="giveChair()">Steel Chair</button>
+				<button class="btn btn-success" onclick="giveBat()">Metal Bat</button>
+			</div>
+		</div>
+		<div class="row text-center mt-3 text-white">
+			<div class="col">
+				<span>Items Equipped: <span id="equipped-item"></span></span>
+			</div>
+		</div>
+		<div class="row text-center mt-3">
+			<div class="col">
+				<button class="btn btn-light" onclick="reset()">Reset Game</button>
 			</div>
 		</div>
 	</footer>
